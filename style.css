@@ -18,15 +18,8 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-nav a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
+.navbar-expand-lg {
+    background: #237886;
 }
 
 /* Hero */
@@ -47,6 +40,7 @@ nav a:hover {
 
 .hero button:hover {
     background: #555;
+    cursor: underline;
 }
 
 /* Sections */
@@ -69,6 +63,11 @@ section {
     text-align: center;
 }
 
+.services :hover {
+background-color: #237886;
+cursor: grab;
+}
+
 /* Gallery */
 .gallery {
     display: grid;
@@ -77,9 +76,14 @@ section {
     margin-top: 20px;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
+.carousel-item {
+  height: 800px;          /* pick a height that works for all pictures */
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;      /* fills without distortion */
 }
 
 /* Footer */

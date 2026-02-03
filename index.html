@@ -5,43 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oli Dietrich - Circus Artist</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <body>
 
     <!-- Navigation -->
     <header>
         <h1>Oli Dietrich - Circus Artist</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">services</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">contact</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gallery
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Pictures</a></li>
+            <li><a class="dropdown-item" href="#">Videos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <h2>Home</h2>
-        <p>Your short tagline or description</p>
+        <p>Welcome to my website</p>
         <button onclick="contactAlert()">Get in Touch</button>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
+        <img src="Oli_2_HiRes.jpg" width="100px">
         <p>
-            My Name is Oli, I am a Circus Artist originally from Switzerland.
-
-        </p>
+            My Name is Oli, I am a Circus Artist originally from Switzerland.</p>
+            <hr/>
     </section>
 
     <!-- Services Section -->
     <section id="services">
         <h2>My Services</h2>
         <div class="services">
-            <div class="card">Service One</div>
-            <div class="card">Service Two</div>
-            <div class="card">Service Three</div>
+            <div class="card">Performing</div>
+            <div class="card">Teaching</div>
+            <div class="card">Webdesign</div>
         </div>
     </section>
 
@@ -49,9 +77,38 @@
     <section id="gallery">
         <h2>Gallery</h2>
         <div class="gallery">
-            <img src="images/photo1.jpg" alt="Business photo">
-            <img src="images/photo2.jpg" alt="Business photo">
-        </div>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="Oli_8_HiRes.jpg" class="d-block w-100" alt="Handstand promo">
+    </div>
+
+    <div class="carousel-item">
+      <img src="L1129755.jpeg" class="d-block w-100" alt="Handstand promo on cello">
+    </div>
+
+    <div class="carousel-item">
+        <img src="Oli_2_HiRes.jpg" class="d-block w-100" alt="Violin headshot">
+    </div>
+
+    <div class="carousel-item">
+        <img src="Belvedere_Handstand.jpeg" class="d-block w-100" alt="Handstand Vienna">
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
     </section>
 
     <!-- Contact Section -->
@@ -59,6 +116,61 @@
         <h2>Contact Me</h2>
         <p>Email: olidietrich@hotmail.com</p>
         <p>Phone: +353 83 117 78 69</p>
+
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" value="" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">Country</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option></option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Postcode</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid Postcode.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
     </section>
 
     <footer>
