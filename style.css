@@ -18,8 +18,8 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.navbar-expand-lg {
-    background: #237886;
+.navbar-expand-lg.bg-body-tertiary {
+    background-color: #237886;
 }
 
 /* Hero */
