@@ -18,9 +18,20 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.navbar-expand-lg.bg-body-tertiary {
+
+.custom-navbar {
     background-color: #237886;
 }
+.custom-navbar .nav-link {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffffff !important;
+    opacity: 0.8;
+}
+
 
 /* Hero */
 .hero {
