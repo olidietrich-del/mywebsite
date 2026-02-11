@@ -35,9 +35,35 @@ header {
 
 /* Hero */
 .hero {
-    background: #f4f4f4;
+    position: relative;
     padding: 60px 20px;
     text-align: center;
+    overflow:hidden;
+}
+.hero::before{
+    content: "";
+    background-image: url("images/received_1004829354119802.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:0;
+    position:absolute;
+}
+
+.hero > * {
+    position: relative;
+    z-index: auto;
+}
+
+#h2{
+    color:white;
+}
+#header-p{
+    color:white;
 }
 
 .hero button {
@@ -45,7 +71,7 @@ header {
     padding: 10px 20px;
     border: none;
     background: #333;
-    color: white;
+    color:white;
     cursor: pointer;
 }
 
