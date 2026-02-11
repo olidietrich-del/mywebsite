@@ -50,6 +50,22 @@ section {
     margin: auto;
 }
 
+.projects{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.card {
+    background: #eee;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+.projects :hover {
+background-color: #237886;
+cursor: grab;
+}
+
 .services {
     display: flex;
     gap: 20px;
