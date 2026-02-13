@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -22,16 +23,11 @@ header {
 .custom-navbar {
     background-color: #237886;
 }
-.custom-navbar .nav-link {
-    color: white !important;
-    text-decoration: none !important;
-}
 
 .custom-navbar .nav-link:hover {
     color: #ffffff !important;
     opacity: 0.8;
 }
-
 
 /* Hero */
 .hero {
@@ -52,6 +48,8 @@ header {
     left:0;
     z-index:0;
     position:absolute;
+    padding: 10px;
+    margin: 10px;
 }
 
 .hero > * {
@@ -87,17 +85,27 @@ section {
     margin: auto;
 }
 
+#about{
+    columns: 2;
+    
+}
+#about img {
+    max-width: 100%;
+}
 .projects{
     display: flex;
     gap: 20px;
     margin-top: 20px;
+    flex-direction: row;
+    flex-wrap:wrap;
+
 }
 .card {
     background: #eee;
     padding: 20px;
     flex: 1;
-    text-align: center;
-}
+    text-align: center;}
+
 .projects :hover {
 background-color: #237886;
 cursor: grab;
@@ -107,6 +115,8 @@ cursor: grab;
     display: flex;
     gap: 20px;
     margin-top: 20px;
+    flex-direction: row;
+    flex-wrap:wrap;
 }
 
 .card {
@@ -146,4 +156,9 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+#about {columns: 1;
+    }
 }
