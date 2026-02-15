@@ -1,3 +1,7 @@
+:root{
+    --turquoise:#237886;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +15,7 @@ body {
 
 /* Header */
 header {
-    background: #237886;
+    background: var(--turquoise);
     color: white;
     padding: 15px;
     display: flex;
@@ -111,10 +115,11 @@ section {
     padding: 20px;
     flex: 1;
     text-align: center;
+    border-radius: 50px;
 }
 
 .projects :hover {
-    background-color: #237886;
+    background-color: var(--turquoise);
     cursor: grab;
 }
 
@@ -135,7 +140,7 @@ section {
 }
 
 .services :hover {
-    background-color: #237886;
+    background-color: var(--turquoise);
     cursor: grab;
 }
 
