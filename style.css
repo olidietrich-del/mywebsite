@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -34,34 +33,36 @@ header {
     position: relative;
     padding: 60px 20px;
     text-align: center;
-    overflow:hidden;
+    overflow: hidden;
 }
-.hero::before{
+
+.hero::before {
     content: "";
     background-image: url("images/received_1004829354119802.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    z-index:0;
-    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    position: absolute;
     padding: 10px;
     margin: 10px;
 }
 
-.hero > * {
+.hero>* {
     position: relative;
     z-index: auto;
 }
 
-#h2{
-    color:white;
+#h2 {
+    color: white;
 }
-#header-p{
-    color:white;
+
+#header-p {
+    color: white;
 }
 
 .hero button {
@@ -69,7 +70,7 @@ header {
     padding: 10px 20px;
     border: none;
     background: #333;
-    color:white;
+    color: white;
     cursor: pointer;
 }
 
@@ -85,38 +86,44 @@ section {
     margin: auto;
 }
 
-#about{
+#about {
     columns: 2;
-    
 }
+
+#about hr {
+    display: none;
+}
+
 #about img {
     max-width: 100%;
 }
-.projects{
+
+.projects {
     display: flex;
     gap: 20px;
     margin-top: 20px;
     flex-direction: row;
-    flex-wrap:wrap;
-
 }
+
 .card {
+    border: 2px solid #237886;
     background: #eee;
     padding: 20px;
     flex: 1;
-    text-align: center;}
+    text-align: center;
+}
 
 .projects :hover {
-background-color: #237886;
-cursor: grab;
+    background-color: #237886;
+    cursor: grab;
 }
 
 .services {
     display: flex;
     gap: 20px;
     margin-top: 20px;
-    flex-direction: row;
-    flex-wrap:wrap;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -124,11 +131,12 @@ cursor: grab;
     padding: 20px;
     flex: 1;
     text-align: center;
+
 }
 
 .services :hover {
-background-color: #237886;
-cursor: grab;
+    background-color: #237886;
+    cursor: grab;
 }
 
 /* Gallery */
@@ -140,13 +148,15 @@ cursor: grab;
 }
 
 .carousel-item {
-  height: 800px;          /* pick a height that works for all pictures */
+    height: 800px;
+    /* pick a height that works for all pictures */
 }
 
 .carousel-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;      /* fills without distortion */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* fills without distortion */
 }
 
 /* Footer */
@@ -159,6 +169,25 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-#about {columns: 1;
+    #about {
+        columns: 1;
+        text-align: center;
+    }
+
+    #projects {
+        text-align: center;
+    }
+
+    .projects {
+        flex-direction: column;
+
+    }
+
+    #services {
+        text-align: center;
+    }
+
+    .services {
+        flex-direction: column;
     }
 }
