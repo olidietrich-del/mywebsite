@@ -94,12 +94,16 @@ header {
     z-index: auto;
 }
 
-#h2 {
+#h2{
     color: white;
+    animation-name: slideinfromleft;
+    animation-duration: 2s;
 }
 
 #header-p {
     color: white;
+    animation-name: slideinfromleft;
+    animation-duration: 2s;
 }
 
 .hero button {
@@ -207,6 +211,11 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+}
+
+@keyframes slideinfromleft {
+    from {transform: translateX(0);}
+    to{transform: translateX(100px);}
 }
 
 @media screen and (max-width: 700px) {
