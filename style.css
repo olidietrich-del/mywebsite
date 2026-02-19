@@ -75,7 +75,7 @@ header {
 
 .hero::before {
     content: "";
-    background-image: url("images/received_1004829354119802.jpeg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(255,255,255,1)), url("images/received_1004829354119802.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
