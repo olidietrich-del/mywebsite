@@ -7,8 +7,9 @@
   <title>Oli Dietrich - Circus Artist</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
 <body>
 
@@ -69,14 +70,17 @@
     <h2>About Me</h2>
     <p>
       Olivier is a Swiss circus performer based in Dublin and Switzerland. In 2017 he completed his studies of contemporary circus and physical theatre at the Circomedia Circus School in Bristol which provided him with a strong foundation in partner acrobatics, tumbling, juggling, clowning and hand balancing. He undertook thereafter specialised training with handbalancers Sammy Dinneen, Felipe Salas and Sainaa and clowning classes with Jon Davison. Olivier has performed at various festivals and with ensembles throughout Europe including Wiener Festwochen, Lange Nacht Der Bühnen, Cirque du Chennai, KulturSommer Vienna, BEA Bern, Stadttheater Bern, TAKT Konzert Serien Vienna amongst others. Over a period of 4 years, Olivier led regular London Youth Circus, Sensory Circus, Acrobatics and Handstand classes at the National Centre for Circus Arts London and coached on London’s West End ‘Matilda’ Production. Olivier has worked with Irish violinist, Jane Hackett on developing performances for Deaf and hard of hearing audiences, with performances in Austria and Ireland. Since recently moving to Ireland, Olivier looks forward to engaging with the circus, teaching and performance landscape it has to offer.</p>
-    <hr />
+    <hr >
   </section>
 
   <!-- Projects Section -->
   <section id="projects">
     <h2>My Projects</h2>
     <div class="projects">
-      <div class="card">My work</div>
+      <div class="card">My work
+        <h3 id="person-name"></h3>
+        <p id="person-e-mail"></p>
+      </div>
       <div class="card">Freestyle Orchestra</div>
       <div class="card">Tocca Theater</div>
     </div>
@@ -117,7 +121,7 @@
           </div>
 
         </div>
-
+      </div>
         <!-- Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
@@ -190,6 +194,7 @@
         <button class="btn btn-primary" type="submit">Submit form</button>
       </div>
     </form>
+  </section>
 </main>
 
   <footer>
@@ -197,6 +202,7 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="playapi.js"></script>
 </body>
 
 </html>

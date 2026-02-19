@@ -13,6 +13,39 @@ body {
     line-height: 1.6;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#about {
+  grid-column: 1 / -1;       /* full width in main grid */
+  display: grid;              /* make About a grid */
+  grid-template-columns: 1fr 1fr;  /* two columns inside About */
+  gap: 2rem;                  /* spacing between columns */
+}
+#gallery,
+#contact {
+    grid-column: 1 / -1;
+    max-width: 100%;
+}
+
+/* Middle row placement */
+#projects {
+  grid-column: 1;
+}
+
+#services {
+  grid-column: 2;
+}
+
+
 /* Header */
 header {
     background: var(--turquoise);
@@ -86,8 +119,6 @@ header {
 /* Sections */
 section {
     padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
 }
 
 #about {
@@ -129,6 +160,11 @@ section {
     margin-top: 20px;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+}
+.services :hover, :focus{
+    font-size:larger;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s;
 }
 
 .card {
