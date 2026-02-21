@@ -1,13 +1,20 @@
-GithubRepository: 
-GitHubhostagepage: https://olidietrich-del.github.io/mywebsite/
+# Project title: Oli Dietrich - Circus Artist
 
-Project title: Oli Dietrich - Circus Artist
+* GithubRepository: 
+* GitHubhostagepage: https://olidietrich-del.github.io/mywebsite/
 
-Project description:
+## Table of contents
+1. Overview
+2. Highlighted Features
+3. Features
+
+# 1.Overview
 
 This is my own website as a circus performer, teacher and webdeveloper that I'll use in the future!
 
-Features:
+# 2.Highlighted Features
+
+# 3.Features:
 - my projects
 - gallery
 - contact (with contact form)
@@ -16,7 +23,8 @@ Features:
 responsive design
 
 Technologies used:
--html
+### html
+```
 -css
 -javascript
 -astro
