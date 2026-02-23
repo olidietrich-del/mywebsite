@@ -1,7 +1,7 @@
 # Project title: Oli Dietrich - Circus Artist
 
-* GithubRepository: 
-* GitHubhostagepage: https://olidietrich-del.github.io/mywebsite/
+* Github repo: 
+* hosted page link Github: https://olidietrich-del.github.io/mywebsite/
 
 ## Table of contents
 1. Overview

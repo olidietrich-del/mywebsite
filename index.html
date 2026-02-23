@@ -60,142 +60,173 @@
   <section class="hero">
     <h2 id="h2">Home</h2>
     <p id="header-p">Welcome to my website</p>
-    <button onclick="contactAlert()">Get in Touch</button>
+    <button onclick="scrollToContact()">Get in Touch</button>
   </section>
 
-<main>
-  <!-- About Section -->
-  <section id="about">
-    <img src="images/Oli_2_HiRes.jpg" alt="Oli playing violin">
-    <h2>About Me</h2>
-    <p>
-      Olivier is a Swiss circus performer based in Dublin and Switzerland. In 2017 he completed his studies of contemporary circus and physical theatre at the Circomedia Circus School in Bristol which provided him with a strong foundation in partner acrobatics, tumbling, juggling, clowning and hand balancing. He undertook thereafter specialised training with handbalancers Sammy Dinneen, Felipe Salas and Sainaa and clowning classes with Jon Davison. Olivier has performed at various festivals and with ensembles throughout Europe including Wiener Festwochen, Lange Nacht Der Bühnen, Cirque du Chennai, KulturSommer Vienna, BEA Bern, Stadttheater Bern, TAKT Konzert Serien Vienna amongst others. Over a period of 4 years, Olivier led regular London Youth Circus, Sensory Circus, Acrobatics and Handstand classes at the National Centre for Circus Arts London and coached on London’s West End ‘Matilda’ Production. Olivier has worked with Irish violinist, Jane Hackett on developing performances for Deaf and hard of hearing audiences, with performances in Austria and Ireland. Since recently moving to Ireland, Olivier looks forward to engaging with the circus, teaching and performance landscape it has to offer.</p>
-    <hr >
-  </section>
+  <main>
+    <!-- About Section -->
+    <section id="about">
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects">
-      <div class="card">My work
-        <h3 id="person-name"></h3>
-        <p id="person-e-mail"></p>
+      <div class="about-img">
+        <img src="images/Oli_2_HiRes.jpg" alt="Oli playing violin">
       </div>
-      <div class="card">Freestyle Orchestra</div>
-      <div class="card">Tocca Theater</div>
-    </div>
-  </section>
 
-  <!-- Services Section -->
-  <section id="services">
-    <h2>My Services</h2>
-    <div class="services">
-      <div class="card">Performing</div>
-      <div class="card">Teaching</div>
-      <div class="card">Webdesign</div>
-    </div>
-  </section>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Olivier is a Swiss circus performer based in Dublin and Switzerland. In 2017 he completed his studies of
+          contemporary circus and physical theatre at the Circomedia Circus School in Bristol which provided him with a
+          strong foundation in partner acrobatics, tumbling, juggling, clowning and hand balancing. He undertook
+          thereafter specialised training with handbalancers Sammy Dinneen, Felipe Salas and Sainaa and clowning classes
+          with Jon Davison. Olivier has performed at various festivals and with ensembles throughout Europe including
+          Wiener Festwochen, Lange Nacht Der Bühnen, Cirque du Chennai, KulturSommer Vienna, BEA Bern, Stadttheater
+          Bern, TAKT Konzert Serien Vienna amongst others. Over a period of 4 years, Olivier led regular London Youth
+          Circus, Sensory Circus, Acrobatics and Handstand classes at the National Centre for Circus Arts London and
+          coached on London’s West End ‘Matilda’ Production. Olivier has worked with Irish violinist, Jane Hackett on
+          developing performances for Deaf and hard of hearing audiences, with performances in Austria and Ireland.
+          Since recently moving to Ireland, Olivier looks forward to engaging with the circus, teaching and performance
+          landscape it has to offer.
+        </p>
+      </div>
 
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    </section>
 
-        <div class="carousel-inner">
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <div class="card">My work
+          <h3 id="person-name"></h3>
+          <p id="person-e-mail"></p>
+        </div>
+        <div class="card">Freestyle Orchestra</div>
+        <div class="card">Tocca Theater</div>
+      </div>
+    </section>
 
-          <div class="carousel-item active">
-            <img src="images/Oli_8_HiRes.jpg" class="d-block w-100" alt="Handstand promo">
+    <!-- Services Section -->
+    <section id="services">
+      <h2>My Services</h2>
+      <div class="services">
+        <div class="card">Performing</div>
+        <div class="card">Teaching</div>
+        <div class="card">Webdesign</div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="images/Oli_8_HiRes.jpg" class="d-block w-100" alt="Handstand promo">
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/L1129755.jpeg" class="d-block w-100" alt="Handstand promo on cello">
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/Oli_2_HiRes.jpg" class="d-block w-100" alt="Violin headshot">
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/Belvedere_Handstand.jpeg" class="d-block w-100" alt="Handstand Vienna">
+            </div>
+
           </div>
 
-          <div class="carousel-item">
-            <img src="images/L1129755.jpeg" class="d-block w-100" alt="Handstand promo on cello">
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: olidietrich@hotmail.com</p>
+      <p>Phone: +353 83 117 78 69</p>
+      <br>
+
+      <h3>Please join my email list</h3>
+      
+      <form id="email_form" name="email_form" action="join.html" method="get">
+        <label for="email_address" class="email-address-label">Email Address:</label>
+        <input type="email" id="email_address" name="email_address" required>
+        <span id="email_error">*</span>
+        <button type="submit">Join</button>
+      </form>
+      
+      <br>
+      <br>
+      <h3>Get in touch via this form</h3>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+            Looks good!
           </div>
-
-          <div class="carousel-item">
-            <img src="images/Oli_2_HiRes.jpg" class="d-block w-100" alt="Violin headshot">
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            Looks good!
           </div>
-
-          <div class="carousel-item">
-            <img src="images/Belvedere_Handstand.jpeg" class="d-block w-100" alt="Handstand Vienna">
-          </div>
-
         </div>
-      </div>
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-
-      </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: olidietrich@hotmail.com</p>
-    <p>Phone: +353 83 117 78 69</p>
-
-    <form class="row g-3 needs-validation" novalidate>
-      <div class="col-md-4">
-        <label for="validationCustom01" class="form-label">First name</label>
-        <input type="text" class="form-control" id="validationCustom01" value="" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustom02" class="form-label">Last name</label>
-        <input type="text" class="form-control" id="validationCustom02" value="" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-6">
-        <label for="validationCustom03" class="form-label">City</label>
-        <input type="text" class="form-control" id="validationCustom03" required>
-        <div class="invalid-feedback">
-          Please provide a valid city.
-        </div>
-      </div>
-      <div class="col-md-3">
-        <label for="validationCustom04" class="form-label">Country</label>
-        <select class="form-select" id="validationCustom04" required>
-          <option selected disabled value="">Choose...</option>
-          <option></option>
-        </select>
-        <div class="invalid-feedback">
-          Please select a valid state.
-        </div>
-      </div>
-      <div class="col-md-3">
-        <label for="validationCustom05" class="form-label">Postcode</label>
-        <input type="text" class="form-control" id="validationCustom05" required>
-        <div class="invalid-feedback">
-          Please provide a valid Postcode.
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-          <label class="form-check-label" for="invalidCheck">
-            Agree to terms and conditions
-          </label>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
           <div class="invalid-feedback">
-            You must agree before submitting.
+            Please provide a valid city.
           </div>
         </div>
-      </div>
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </div>
-    </form>
-  </section>
-</main>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Country</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option></option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Postcode</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid Postcode.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>© 2026 Oli Dietrich</p>
