@@ -163,14 +163,14 @@
       
       <form id="email_form" name="email_form" action="join.html" method="get">
         <label for="email_address" class="email-address-label">Email Address:</label>
-        <input type="email" id="email_address" name="email_address" required>
+        <input type="email" id="email_address" name="email_address" novalidate >
         <span id="email_error">*</span>
         <button type="submit">Join</button>
       </form>
       
       <br>
       <br>
-      <h3>Get in touch via this form</h3>
+      <h3 id="getintouch">Get in touch via this form</h3>
       <form class="row g-3 needs-validation" novalidate>
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label">First name</label>

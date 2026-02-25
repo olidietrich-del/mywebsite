@@ -220,7 +220,8 @@ section {
 
 button {
     padding: 2px 3px;
-    background-color:#237886
+    background-color:#237886;
+    color:white;
 }
 
 /* Footer */
