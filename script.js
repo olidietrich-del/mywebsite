@@ -90,3 +90,10 @@ function validateEmail(email) {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(email);
 }
+
+const btn = document.querySelector(".btn.btn-primary");
+
+btn.addEventListener("click", function(event) {
+    event.preventDefault(); // prevents form from submitting if inside a form
+    alert("Thank you for sending your details, you'll receive an e-mail shortly");
+});
