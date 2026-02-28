@@ -7,21 +7,42 @@ function scrollToContact() {
   contactSection.scrollIntoView({ behavior: 'smooth' });
 }
 
+const projectCards = document.querySelectorAll ('.projects .card');
+
+projectCards.forEach(card => {
+  card.addEventListener('click', ()=>{
+    window.location.href = 'projects.html';
+  });
+});
+
+const serviceCards = document.querySelectorAll('.services .card');
+
+serviceCards.forEach(card => {
+  card.addEventListener('click', function () {
+    if (this.classList.contains('active')) {
+      this.classList.remove('active'); 
+    } else {
+      serviceCards.forEach(c => c.classList.remove('active'));
+      this.classList.add('active'); 
+    }
+  });
+});
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
   'use strict'
 
-document.getElementById('email_address').value = "type e-mail here";
-document.getElementById('email_address').style.color ="lightgrey";
+  document.getElementById('email_address').value = "type e-mail here";
+  document.getElementById('email_address').style.color = "lightgrey";
 
-const input = document.getElementById('email_address');
+  const input = document.getElementById('email_address');
 
-input.addEventListener('focus', function () {
-  if (this.value === "type e-mail here") {
-    this.value = "";
-    this.style.color = "black";
-  }
-});
+  input.addEventListener('focus', function () {
+    if (this.value === "type e-mail here") {
+      this.value = "";
+      this.style.color = "black";
+    }
+  });
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
   const forms = document.querySelectorAll('.needs-validation')
@@ -93,7 +114,7 @@ function validateEmail(email) {
 
 const btn = document.querySelector(".btn.btn-primary");
 
-btn.addEventListener("click", function(event) {
-    event.preventDefault(); // prevents form from submitting if inside a form
-    alert("Thank you for sending your details, you'll receive an e-mail shortly");
+btn.addEventListener("click", function (event) {
+  event.preventDefault(); // prevents form from submitting if inside a form
+  alert("Thank you for sending your details, you'll receive an e-mail shortly");
 });
