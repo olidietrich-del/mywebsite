@@ -99,6 +99,8 @@ emailForm.addEventListener('submit', function (event) {
     return;
   }
 
+  localStorage.setItem("newsletterEmail", email)
+
   // Here you would send the email to your server or service
   alert(`Thank you! ${email} has been added to the list.`);
 
@@ -117,4 +119,14 @@ const btn = document.querySelector(".btn.btn-primary");
 btn.addEventListener("click", function (event) {
   event.preventDefault(); // prevents form from submitting if inside a form
   alert("Thank you for sending your details, you'll receive an e-mail shortly");
+});
+
+window.addEventListener("DOMContentLoaded", function () {
+  const savedEmail = localStorage.getItem("newsletterEmail");
+
+  if (savedEmail) {
+    const emailInput = document.getElementById('email_address');
+    emailInput.value = savedEmail;
+    emailInput.style.color = "black";
+  }
 });
