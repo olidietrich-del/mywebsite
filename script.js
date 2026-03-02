@@ -122,11 +122,24 @@ btn.addEventListener("click", function (event) {
 });
 
 window.addEventListener("DOMContentLoaded", function () {
-  const savedEmail = localStorage.getItem("newsletterEmail");
+  const emailInput = document.getElementById('email_address');
 
-  if (savedEmail) {
-    const emailInput = document.getElementById('email_address');
-    emailInput.value = savedEmail;
-    emailInput.style.color = "black";
-  }
+  // Always start with the placeholder text
+  emailInput.value = "type e-mail here";
+  emailInput.style.color = "lightgrey";
+
+  emailInput.addEventListener("focus", function () {
+    if (this.value === "type e-mail here") {
+      this.value = "";
+      this.style.color = "black";
+    }
+  });
+
+  emailInput.addEventListener("blur", function () {
+    if (this.value.trim() === "") {
+      this.value = "type e-mail here";
+      this.style.color = "lightgrey";
+    }
+  });
 });
+
