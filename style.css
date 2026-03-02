@@ -9,10 +9,6 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    line-height: 1.9;
-}
-
 main {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -24,6 +20,7 @@ main {
 
 body {
     margin: 0;
+    line-height: 1.9;
 }
 
 #about {
@@ -156,13 +153,13 @@ section {
     justify-content: flex-start;
 }
 
-.projects .card:hover {
+.projects__card:hover {
     background-color: var(--turquoise);
     cursor:grab;
 
 }
 
-.card {
+.projects__card, .services__card {
     border: 2px solid #237886;
     background: #eee;
     padding: 20px;
@@ -183,33 +180,33 @@ section {
     justify-content: flex-start;
 }
 
-.services .card:hover {
+.services__card:hover {
     background-color: var(--turquoise);
     cursor: grab;
     transition-timing-function: ease-in;
     transition-delay: 0.5s;
 }
 
-.card.active {
+.services__card--active {
     /* When expanded, allow normal wrapping */
     white-space: normal;
     max-width: 500px;
     /* wider so content fits */
 }
 
-.card-content {
+.services__card--content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
 }
 
-.card.active .card-content {
+.services__card--active .services__card--content {
     max-height: 600px;
     /* enough for full content */
     margin-top: 15px;
 }
 
-.card.active .card-content img {
+.services__card--active .services__card--content img {
     max-width: 100%;
 }
 
@@ -260,8 +257,7 @@ footer {
 
 @media screen and (max-width: 700px) {
     main {
-        grid-template-columns: 1fr;
-        padding: 0 15px;
+        grid-template-columns: 100%;
     }
 
     #projects,
@@ -270,7 +266,7 @@ footer {
     #contact,
     #about {
         grid-column: 1 / -1;
-        max-width: 600px;
+        max-width: 700px;
         margin-left: auto;
         margin-right: auto;
     }

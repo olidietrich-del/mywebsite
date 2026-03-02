@@ -7,7 +7,7 @@ function scrollToContact() {
   contactSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-const projectCards = document.querySelectorAll ('.projects .card');
+const projectCards = document.querySelectorAll ('.projects__card');
 
 projectCards.forEach(card => {
   card.addEventListener('click', ()=>{
@@ -15,15 +15,15 @@ projectCards.forEach(card => {
   });
 });
 
-const serviceCards = document.querySelectorAll('.services .card');
+const serviceCards = document.querySelectorAll('.services__card');
 
 serviceCards.forEach(card => {
   card.addEventListener('click', function () {
-    if (this.classList.contains('active')) {
-      this.classList.remove('active'); 
+    if (this.classList.contains('services__card--active')) {
+      this.classList.remove('services__card--active'); 
     } else {
-      serviceCards.forEach(c => c.classList.remove('active'));
-      this.classList.add('active'); 
+      serviceCards.forEach(c => c.classList.remove('services__card--active'));
+      this.classList.add('services__card--active'); 
     }
   });
 });
