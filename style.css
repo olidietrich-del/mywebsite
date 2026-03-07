@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
 :root {
     --turquoise: #237886;
 }
@@ -6,7 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Combo', sans-serif;
+    /* font-family: Arial, sans-serif; */
 }
 
 main {
@@ -52,7 +55,8 @@ body {
 header {
     background: var(--turquoise);
     color: white;
-    padding: 15px;
+    font-size: larger;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
