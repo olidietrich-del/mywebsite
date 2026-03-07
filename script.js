@@ -33,7 +33,7 @@ serviceCards.forEach(card => {
   'use strict'
 
   document.getElementById('email_address').value = "type e-mail here";
-  document.getElementById('email_address').style.color = "lightgrey";
+  document.getElementById('email_address').style.color = "black";
 
   const input = document.getElementById('email_address');
 
