@@ -37,7 +37,7 @@ body {
     width: 100%;
 }
 
-/* Middle row placement */
+
 #projects {
     grid-column: 1;
 
@@ -183,7 +183,7 @@ section {
     transition-timing-function: ease-in;
     transition-delay: 0.5s;
 }
-
+/* cards aren't expanded but when clicked then they show what my services are in a little bit more detail */
 .services__card--active {
     /* When expanded, allow normal wrapping */
     white-space: normal;
@@ -284,6 +284,7 @@ footer {
 }
 
 
+/* responsive design */
 
 @media screen and (max-width: 700px) {
     main {
@@ -335,7 +336,7 @@ footer {
     }
 }
 
-/* projects page css so its not interfering with the rest */
+/* projects page here as I added it late */
 
 
 #projects {
@@ -374,12 +375,4 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-}
-
-/* Mobile adjustments for projects cards */
-@media screen and (max-width: 700px) {
-    .projects__card {
-        width: 90%;
-        /* better on small screens */
-    }
 }
