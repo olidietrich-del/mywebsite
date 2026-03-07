@@ -25,16 +25,16 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">about</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects.html">projects</a>
+              <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">services</a>
+              <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="gallery.html" role="button" data-bs-toggle="dropdown"
@@ -43,7 +43,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="gallery.html">Pictures</a></li>
-                <li><a class="dropdown-item" href="gallery.html">Videos</a></li>
+                <li><a class="dropdown-item" href="gallery.html">Performance Photos</a></li>
               </ul>
             </li>
           </ul>
@@ -53,32 +53,62 @@
   </header>
 
 
-  <!-- Services Section -->
-  <section id="services">
-  <h2>My Services</h2>
-  <div class="services">
 
-    <div class="card">
-      <h3>Performing</h3>
-      <div class="card-content">
-        <p>Get in contact if you like what you see and we can discuss performance details at your event</p>
-        <img src="images/2024-krapoldi-innenstadt-347.jpg" alt="Oli performing Innsbruck">
+ <!-- Services Section -->
+    <section id="services">
+        <style>
+    #services {
+      text-align: center;
+    }
+
+    #services .services {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    #services .services__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+      <div class="container">
+      <h2>My Services</h2>
+      <div class="services">
+
+        <div class="services__card">
+          <h3>Performing</h3>
+          <div class="services__card--content">
+            <p>Get in contact if you like what you see and we can discuss performance details at your event</p>
+            <img src="images/2024-krapoldi-innenstadt-347.jpg" alt="Oli performing Innsbruck">
+          </div>
+        </div>
+
+        <div class="services__card">
+          <h3>Teaching</h3>
+          <div class="services__card--content">
+            <p>Please get in touch if you want me to teach a workshop or regular group or private classes for children
+              or adults</p>
+          </div>
+        </div>
+
+        <div class="services__card">
+          <h3>Webdesign</h3>
+          <div class="services__card--content">
+            <p>Coming soon...</p>
+          </div>
+        </div>
+
       </div>
-    </div>
-
-    <div class="card">
-      <h3>Teaching</h3>
-      <div class="card-content">
-        <p>Teaching details here...</p>
       </div>
-    </div>
+    </section>
+<footer>
+        <p>© 2026 Oli Dietrich - Circus Artist</p>
+    </footer>
 
-    <div class="card">
-      <h3>Webdesign</h3>
-      <div class="card-content">
-        <p>Webdesign details here...</p>
-      </div>
-    </div>
-
-  </div>
-</section>
+    <script src="script.js"></script>
+</body>
+</html>
