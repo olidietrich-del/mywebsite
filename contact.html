@@ -54,40 +54,45 @@
 
 
   
-   <!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact">
-      <div class="container">
       <h2>Contact Me</h2>
       <p>Email: olidietrich@hotmail.com</p>
       <p>Phone: +353 83 117 78 69</p>
       <br>
 
-      <h3>Please join my email list</h3>
+      <div>
+        <h3>Please join my email list</h3>
 
-      <form id="email_form" name="email_form" action="join.html" method="get">
-        <label for="email_address" class="email-address-label">Email Address:</label>
-        <input type="email" id="email_address" name="email_address" novalidate>
-        <span id="email_error">*</span>
-        <button type="submit">Join</button>
-      </form>
-
+        <form id="email_form" name="email_form" action="join.html" method="get">
+          <label for="email_address" class="email-address-label">Email Address:</label>
+          <input type="email" id="email_address" name="email_address" novalidate>
+          <span id="email_error">*</span>
+          <button type="submit">Join</button>
+        </form>
+      </div>
       <br>
       <br>
       <h3 id="getintouch">Get in touch via this form</h3>
       <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <label for="validationCustom01" class="form-label">First name</label>
           <input type="text" class="form-control" id="validationCustom01" value="" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <label for="validationCustom02" class="form-label">Last name</label>
           <input type="text" class="form-control" id="validationCustom02" value="" required>
           <div class="valid-feedback">
             Looks good!
           </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustomEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="validationCustomEmail" placeholder="you@example.com" required>
+          <div class="invalid-feedback">Please provide a valid email.</div>
         </div>
         <div class="col-md-6">
           <label for="validationCustom03" class="form-label">City</label>
@@ -96,7 +101,7 @@
             Please provide a valid city.
           </div>
         </div>
-        <div class="col-md-3"> <label for="validationCustom04" class="form-label">Country</label>
+        <div class="col-md-6"> <label for="validationCustom04" class="form-label">Country</label>
           <select class="form-select" id="validationCustom04" required>
             <option selected disabled value="">Choose...</option>
             <option>Afghanistan</option>
@@ -296,12 +301,18 @@
           </select>
           </select>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
           <label for="validationCustom05" class="form-label">Postcode</label>
           <input type="text" class="form-control" id="validationCustom05" required>
           <div class="invalid-feedback">
             Please provide a valid Postcode.
           </div>
+        </div>
+        <div class="col-12">
+          <label for="validationCustomMessage" class="form-label">Message</label>
+          <textarea class="form-control" id="validationCustomMessage" rows="4" placeholder="Write your message..."
+            required></textarea>
+          <div class="invalid-feedback">Please enter a message.</div>
         </div>
         <div class="col-12">
           <div class="form-check">
@@ -318,7 +329,6 @@
           <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
       </form>
-      </div>
     </section>
   </main>
 

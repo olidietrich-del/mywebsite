@@ -47,7 +47,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="gallery.html">Pictures</a></li>
-                <li><a class="dropdown-item" href="gallery.html">Performance Photos</a></li>
+                <li><a class="dropdown-item" href="gallery.html">Videos</a></li>
               </ul>
             </li>
           </ul>
@@ -103,71 +103,76 @@
 
     <!-- Services Section -->
     <section id="services">
-      <h2>My Services</h2>
-      <div class="services">
+  <h2>My Services</h2>
+  <div class="services">
 
-        <div class="services__card">
-          <h3>Performing</h3>
-          <div class="services__card--content">
-            <p>Get in contact if you like what you see and we can discuss performance details at your event</p>
-            <img src="images/2024-krapoldi-innenstadt-347.jpg" alt="Oli performing Innsbruck">
-          </div>
+    <div class="service">
+      <div class="services__card">
+        Performing
+        <div class="services__card--content">
+          <p>Get in contact if you like what you see and we can discuss performance details at your event</p>
+          <img src="images/2024-krapoldi-innenstadt-347.jpg" alt="Oli performing Innsbruck">
         </div>
-
-        <div class="services__card">
-          <h3>Teaching</h3>
-          <div class="services__card--content">
-            <p>Please get in touch if you want me to teach a workshop or regular group or private classes for children
-              or adults</p>
-          </div>
-        </div>
-
-        <div class="services__card">
-          <h3>Webdesign</h3>
-          <div class="services__card--content">
-            <p>Coming soon...</p>
-          </div>
-        </div>
-
       </div>
-    </section>
+    </div>
+
+    <div class="service">
+      <div class="services__card">
+        Teaching
+        <div class="services__card--content">
+          <p>Please get in touch if you want me to teach a workshop or regular group or private classes for children or adults</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="services__card">
+        Webdesign
+        <div class="services__card--content">
+          <p>Coming soon...</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <!-- Gallery Section -->
     <section id="gallery">
       <h2>Gallery</h2>
       <div class="container">
-      <div class="gallery">
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="gallery">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 
-          <div class="carousel-inner">
+            <div class="carousel-inner">
 
-            <div class="carousel-item active">
-              <img src="images/Oli_8_HiRes.jpg" class="d-block w-100" alt="Handstand promo">
+              <div class="carousel-item active">
+                <img src="images/Oli_8_HiRes.jpg" class="d-block w-100" alt="Handstand promo">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/L1129755.jpeg" class="d-block w-100" alt="Handstand promo on cello">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/Oli_2_HiRes.jpg" class="d-block w-100" alt="Violin headshot">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/Belvedere_Handstand.jpeg" class="d-block w-100" alt="Handstand Vienna">
+              </div>
+
             </div>
 
-            <div class="carousel-item">
-              <img src="images/L1129755.jpeg" class="d-block w-100" alt="Handstand promo on cello">
-            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
 
-            <div class="carousel-item">
-              <img src="images/Oli_2_HiRes.jpg" class="d-block w-100" alt="Violin headshot">
-            </div>
-
-            <div class="carousel-item">
-              <img src="images/Belvedere_Handstand.jpeg" class="d-block w-100" alt="Handstand Vienna">
-            </div>
-
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
-
-          <!-- Controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
         </div>
       </div>
 
@@ -182,32 +187,38 @@
       <p>Phone: +353 83 117 78 69</p>
       <br>
 
-      <h3>Please join my email list</h3>
+      <div>
+        <h3>Please join my email list</h3>
 
-      <form id="email_form" name="email_form" action="join.html" method="get">
-        <label for="email_address" class="email-address-label">Email Address:</label>
-        <input type="email" id="email_address" name="email_address" novalidate>
-        <span id="email_error">*</span>
-        <button type="submit">Join</button>
-      </form>
-
+        <form id="email_form" name="email_form" action="join.html" method="get">
+          <label for="email_address" class="email-address-label">Email Address:</label>
+          <input type="email" id="email_address" name="email_address" novalidate>
+          <span id="email_error">*</span>
+          <button type="submit">Join</button>
+        </form>
+      </div>
       <br>
       <br>
       <h3 id="getintouch">Get in touch via this form</h3>
       <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <label for="validationCustom01" class="form-label">First name</label>
           <input type="text" class="form-control" id="validationCustom01" value="" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <label for="validationCustom02" class="form-label">Last name</label>
           <input type="text" class="form-control" id="validationCustom02" value="" required>
           <div class="valid-feedback">
             Looks good!
           </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustomEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="validationCustomEmail" placeholder="you@example.com" required>
+          <div class="invalid-feedback">Please provide a valid email.</div>
         </div>
         <div class="col-md-6">
           <label for="validationCustom03" class="form-label">City</label>
@@ -216,7 +227,7 @@
             Please provide a valid city.
           </div>
         </div>
-        <div class="col-md-3"> <label for="validationCustom04" class="form-label">Country</label>
+        <div class="col-md-6"> <label for="validationCustom04" class="form-label">Country</label>
           <select class="form-select" id="validationCustom04" required>
             <option selected disabled value="">Choose...</option>
             <option>Afghanistan</option>
@@ -416,12 +427,18 @@
           </select>
           </select>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
           <label for="validationCustom05" class="form-label">Postcode</label>
           <input type="text" class="form-control" id="validationCustom05" required>
           <div class="invalid-feedback">
             Please provide a valid Postcode.
           </div>
+        </div>
+        <div class="col-12">
+          <label for="validationCustomMessage" class="form-label">Message</label>
+          <textarea class="form-control" id="validationCustomMessage" rows="4" placeholder="Write your message..."
+            required></textarea>
+          <div class="invalid-feedback">Please enter a message.</div>
         </div>
         <div class="col-12">
           <div class="form-check">

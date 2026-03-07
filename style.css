@@ -146,40 +146,35 @@ section {
     font-size: larger;
 }
 
-.projects {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.projects__card:hover {
-    background-color: var(--turquoise);
-    cursor: grab;
-
+#services {
+    padding: 50px 0;
+    background-color: #f7f7f7;
 }
 
 .projects__card,
 .services__card {
-    border: 2px solid #237886;
-    background: #eee;
+    background-color: white;
+    font-size: 24px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    flex: 0 1 300px;
+    width: 350px;
     text-align: center;
-    border-radius: 50px;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
-
 
 .services {
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
 }
 
 .services__card:hover {
@@ -234,6 +229,39 @@ button {
     padding: 2px 3px;
     background-color: #237886;
     color: white;
+}
+
+/* Contact Form */
+#contact {
+    grid-column: 1 / -1;
+    padding: 50px 20px;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--turquoise);
+}
+
+#contact p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--turquoise);
+    text-align: center;
+}
+
+#email_form {
+    text-align: center;
 }
 
 /* Footer */
@@ -310,7 +338,6 @@ footer {
 /* projects page css so its not interfering with the rest */
 
 
-
 #projects {
     padding: 50px 0;
     background-color: #f7f7f7;
@@ -327,24 +354,6 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-}
-
-.projects__card {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 350px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.projects__card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    background-color: var(--turquoise);
-    color: white;
-    cursor: pointer;
 }
 
 .projects__card .title {

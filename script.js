@@ -118,7 +118,7 @@ const btn = document.querySelector(".btn.btn-primary");
 
 btn.addEventListener("click", function (event) {
   event.preventDefault(); // prevents form from submitting if inside a form
-  alert("Thank you for sending your details, you'll receive an e-mail shortly");
+  alert("Thank you for your message, I'll be in touch with you shortly");
 });
 
 window.addEventListener("DOMContentLoaded", function () {
