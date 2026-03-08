@@ -28,22 +28,6 @@ serviceCards.forEach(card => {
   });
 });
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
-
-  document.getElementById('email_address').value = "type e-mail here";
-  document.getElementById('email_address').style.color = "black";
-
-  const input = document.getElementById('email_address');
-
-  input.addEventListener('focus', function () {
-    if (this.value === "type e-mail here") {
-      this.value = "";
-      this.style.color = "black";
-    }
-  });
-
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
   const forms = document.querySelectorAll('.needs-validation')
 
@@ -58,7 +42,6 @@ serviceCards.forEach(card => {
       form.classList.add('was-validated')
     }, false)
   })
-})()
 
 function displayErrorMessage(element) {
   let errorMsg = document.querySelector(".error-message");
@@ -126,7 +109,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   // Always start with the placeholder text
   emailInput.value = "type e-mail here";
-  emailInput.style.color = "lightgrey";
+  emailInput.style.color = "grey";
 
   emailInput.addEventListener("focus", function () {
     if (this.value === "type e-mail here") {
