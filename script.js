@@ -109,7 +109,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   // Always start with the placeholder text
   emailInput.value = "type e-mail here";
-  emailInput.style.color = "grey";
+  emailInput.style.color = "#237886";
 
   emailInput.addEventListener("focus", function () {
     if (this.value === "type e-mail here") {
