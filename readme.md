@@ -27,7 +27,7 @@ Technologies used:
 ```
 -css
 -javascript
--astro
+-astro in a different folder
 
 
 
